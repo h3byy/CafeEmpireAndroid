@@ -34,10 +34,10 @@ jobs:
 
       - name: Build APK
         run: |
-          gradle -p extracted/CafeEmpireAndroid_v1_2 assembleDebug
+          gradle -p extracted/CafeEmpireAndroid_v1_1 assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: Cafe-Empire-APK
-          path: extracted/CafeEmpireAndroid_v1_2/app/build/outputs/apk/debug/app-debug.apk
+          path: extracted/CafeEmpireAndroid_v1_1/app/build/outputs/apk/debug/app-debug.apk
